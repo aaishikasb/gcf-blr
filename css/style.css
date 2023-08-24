@@ -140,32 +140,6 @@ canvas {
   max-width: 80%;
 }
 
-@media screen and (max-width: 860px) {
-  header {
-    height: 56px;
-    font-size: 20px;
-  }
-
-  .main-container {
-    flex-direction: column;
-  }
-
-  .input-panel,
-  .preview-panel {
-    width: 100%;
-    max-width: initial;
-  }
-
-  .preview-panel {
-    padding: 24px 0 96px 0;
-    flex: 1;
-  }
-
-  .input {
-    margin-bottom: 24px;
-  }
-}
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -194,4 +168,31 @@ a {
 a:hover {
   color: #e63b60;
   text-decoration-style: wavy;
+}
+
+@media screen and (max-width: 860px) {
+  header {
+    height: 56px;
+    font-size: 20px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .input-panel,
+  .preview-panel, .register-panel {
+    width: 100%;
+    max-width: initial;
+    max-height: fit-content;
+  }
+
+  .preview-panel {
+    padding: 24px 0 96px 0;
+    flex: 1;
+  }
+
+  .input {
+    margin-bottom: 24px;
+  }
 }
